@@ -1,0 +1,2270 @@
+{
+	"info": {
+		"_postman_id": "2d5c9a3a-3d6f-4d3d-a4b1-aec827144b26",
+		"name": "WEBtrab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24571111"
+	},
+	"item": [
+		{
+			"name": "Usuario rotas",
+			"item": [
+				{
+					"name": "Ver usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/user",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Checagem 1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/user",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "559"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"22f-A67ZBvaJibnuNy7YWDSYutqgKaA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Dec 2022 23:58:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638f42bd461a86f831bcd70f\",\n        \"nome\": \"João Firmino Jazias\",\n        \"endereco\": \"Rua Padre José Anxieta, 222, bairro das laranjeiras, Russas, CE\",\n        \"email\": \"joao@gmail.com\",\n        \"senha\": \"joao123456\",\n        \"contato\": \"(88) 91234-5678\",\n        \"trocas_realizadas\": 0,\n        \"data_de_criacao\": \"2022-12-06T13:25:17.132Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638f4692461a86f831bcd715\",\n        \"nome\": \"José Pereira Fernandes\",\n        \"endereco\": \"Rua 1, Bairro bairro, Fortaleza, CE\",\n        \"email\": \"jose@gmail.com\",\n        \"senha\": \"jose123456\",\n        \"contato\": \"(88) 91234-5678\",\n        \"trocas_realizadas\": 0,\n        \"data_de_criacao\": \"2022-12-06T13:41:38.118Z\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Buscando Usuario por ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/user?id=638f42bd461a86f831bcd70f",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "638f42bd461a86f831bcd70f"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "293"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"125-PoQ23tCdvWIMsnt3Bj66DhQp6Go\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:17:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638f42bd461a86f831bcd70f\",\n        \"nome\": \"João Firmino Jazias\",\n        \"endereco\": \"Rua Padre José Anxieta, 222, bairro das laranjeiras, Russas, CE\",\n        \"email\": \"joao@gmail.com\",\n        \"senha\": \"joao123456\",\n        \"contato\": \"(88) 91234-5678\",\n        \"trocas_realizadas\": 0,\n        \"data_de_criacao\": \"2022-12-06T13:25:17.132Z\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Checagem pós usuario TEST",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/user",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "987"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3db-SEwJJALflzhCmvUjp/X1JsYvG+4\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:29:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638f42bd461a86f831bcd70f\",\n        \"nome\": \"João Firmino Jazias\",\n        \"endereco\": \"Rua Padre José Anxieta, 222, bairro das laranjeiras, Russas, CE\",\n        \"email\": \"joao@gmail.com\",\n        \"senha\": \"joao123456\",\n        \"contato\": \"(88) 91234-5678\",\n        \"trocas_realizadas\": 0,\n        \"data_de_criacao\": \"2022-12-06T13:25:17.132Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638f4692461a86f831bcd715\",\n        \"nome\": \"José Pereira Fernandes\",\n        \"endereco\": \"Rua 1, Bairro bairro, Fortaleza, CE\",\n        \"email\": \"jose@gmail.com\",\n        \"senha\": \"jose123456\",\n        \"contato\": \"(88) 91234-5678\",\n        \"trocas_realizadas\": 0,\n        \"data_de_criacao\": \"2022-12-06T13:41:38.118Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638fde3792ecf9a5e1ca7d59\",\n        \"nome\": \"Jose Osmar Silva\",\n        \"endereco\": \"Rua Capricórnio de Almeida, Nº 123, Centro, Townsville-AW\",\n        \"email\": \"Jose2020@test.com\",\n        \"senha\": \"Senhafraca\",\n        \"contato\": \"70 970707070\",\n        \"data_de_criacao\": \"2022-12-07T00:28:39.619Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638fde5892ecf9a5e1ca7d5b\",\n        \"nome\": \"test\",\n        \"endereco\": \"test\",\n        \"email\": \"test\",\n        \"senha\": \"test\",\n        \"contato\": \"test\",\n        \"data_de_criacao\": \"2022-12-07T00:29:12.556Z\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Checar com TEST atualizado",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/user",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1083"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43b-q7YHUCo9doslAUfBYIr/RuVoZyc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:36:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638f42bd461a86f831bcd70f\",\n        \"nome\": \"João Firmino Jazias\",\n        \"endereco\": \"Rua Padre José Anxieta, 222, bairro das laranjeiras, Russas, CE\",\n        \"email\": \"joao@gmail.com\",\n        \"senha\": \"joao123456\",\n        \"contato\": \"(88) 91234-5678\",\n        \"trocas_realizadas\": 0,\n        \"data_de_criacao\": \"2022-12-06T13:25:17.132Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638f4692461a86f831bcd715\",\n        \"nome\": \"José Pereira Fernandes\",\n        \"endereco\": \"Rua 1, Bairro bairro, Fortaleza, CE\",\n        \"email\": \"jose@gmail.com\",\n        \"senha\": \"jose123456\",\n        \"contato\": \"(88) 91234-5678\",\n        \"trocas_realizadas\": 0,\n        \"data_de_criacao\": \"2022-12-06T13:41:38.118Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638fde3792ecf9a5e1ca7d59\",\n        \"nome\": \"Jose Osmar Silva\",\n        \"endereco\": \"Rua Capricórnio de Almeida, Nº 123, Centro, Townsville-AW\",\n        \"email\": \"Jose2020@test.com\",\n        \"senha\": \"Senhafraca\",\n        \"contato\": \"70 970707070\",\n        \"data_de_criacao\": \"2022-12-07T00:28:39.619Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638fde5892ecf9a5e1ca7d5b\",\n        \"nome\": \"Josivan Pereira\",\n        \"endereco\": \"Rua Capricórnio de Almeida, Nº 123, Centro, Townsville-AW\",\n        \"email\": \"Josi2022@novo.com\",\n        \"senha\": \"Senhafraca123\",\n        \"contato\": \"70 970707070\",\n        \"data_de_criacao\": \"2022-12-07T00:29:12.556Z\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Buscar por ID TEST",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/user?id=638fde5892ecf9a5e1ca7d5b",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "638fde5892ecf9a5e1ca7d5b"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "264"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"108-DhmxuQGyWloIptRbTOx5EOr3q2c\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:37:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638fde5892ecf9a5e1ca7d5b\",\n        \"nome\": \"Josivan Pereira\",\n        \"endereco\": \"Rua Capricórnio de Almeida, Nº 123, Centro, Townsville-AW\",\n        \"email\": \"Josi2022@novo.com\",\n        \"senha\": \"Senhafraca123\",\n        \"contato\": \"70 970707070\",\n        \"data_de_criacao\": \"2022-12-07T00:29:12.556Z\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Test deletado",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/user?id=638fde5892ecf9a5e1ca7d5b",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "638fde5892ecf9a5e1ca7d5b"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:38:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						},
+						{
+							"name": "Ultima Checagem",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/user",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "820"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"334-8pHsNA0lSZqxLtYSOjWcxXBBIrQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:38:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638f42bd461a86f831bcd70f\",\n        \"nome\": \"João Firmino Jazias\",\n        \"endereco\": \"Rua Padre José Anxieta, 222, bairro das laranjeiras, Russas, CE\",\n        \"email\": \"joao@gmail.com\",\n        \"senha\": \"joao123456\",\n        \"contato\": \"(88) 91234-5678\",\n        \"trocas_realizadas\": 0,\n        \"data_de_criacao\": \"2022-12-06T13:25:17.132Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638f4692461a86f831bcd715\",\n        \"nome\": \"José Pereira Fernandes\",\n        \"endereco\": \"Rua 1, Bairro bairro, Fortaleza, CE\",\n        \"email\": \"jose@gmail.com\",\n        \"senha\": \"jose123456\",\n        \"contato\": \"(88) 91234-5678\",\n        \"trocas_realizadas\": 0,\n        \"data_de_criacao\": \"2022-12-06T13:41:38.118Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638fde3792ecf9a5e1ca7d59\",\n        \"nome\": \"Jose Osmar Silva\",\n        \"endereco\": \"Rua Capricórnio de Almeida, Nº 123, Centro, Townsville-AW\",\n        \"email\": \"Jose2020@test.com\",\n        \"senha\": \"Senhafraca\",\n        \"contato\": \"70 970707070\",\n        \"data_de_criacao\": \"2022-12-07T00:28:39.619Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Criar usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"test\",\r\n    \"endereco\":\"test\",\r\n    \"email\":\"test\",\r\n    \"senha\":\"test\",\r\n    \"contato\":\"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/user",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criando usuario",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\":\"Jose Osmar Silva\",\r\n    \"endereco\":\"Rua Capricórnio de Almeida, Nº 123, Centro, Townsville-AW\",\r\n    \"email\":\"Jose2020@test.com\",\r\n    \"senha\":\"Senhafraca\",\r\n    \"contato\":\"70 970707070\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/user",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "260"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"104-/Csf94w5D/RUJvzFHXWlj3JQ5f8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:28:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nome\": \"Jose Osmar Silva\",\n    \"endereco\": \"Rua Capricórnio de Almeida, Nº 123, Centro, Townsville-AW\",\n    \"email\": \"Jose2020@test.com\",\n    \"senha\": \"Senhafraca\",\n    \"contato\": \"70 970707070\",\n    \"_id\": \"638fde3792ecf9a5e1ca7d59\",\n    \"data_de_criacao\": \"2022-12-07T00:28:39.619Z\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "Usuario TEST",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\":\"test\",\r\n    \"endereco\":\"test\",\r\n    \"email\":\"test\",\r\n    \"senha\":\"test\",\r\n    \"contato\":\"test\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/user",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "166"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a6-VUAITriumFyvmTAqpmgKHITN2G0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:29:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nome\": \"test\",\n    \"endereco\": \"test\",\n    \"email\": \"test\",\n    \"senha\": \"test\",\n    \"contato\": \"test\",\n    \"_id\": \"638fde5892ecf9a5e1ca7d5b\",\n    \"data_de_criacao\": \"2022-12-07T00:29:12.556Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "atualizar usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Josivan Pereira\",\r\n    \"endereco\": \"Rua Capricórnio de Almeida, Nº 123, Centro, Townsville-AW\",\r\n    \"email\": \"Josi2022@novo.com\",\r\n    \"senha\": \"Senhafraca123\",\r\n    \"contato\": \"70 970707070\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/user/638fde5892ecf9a5e1ca7d5b",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user",
+								"638fde5892ecf9a5e1ca7d5b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar usuario TEST",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Josivan Pereira\",\r\n    \"endereco\": \"Rua Capricórnio de Almeida, Nº 123, Centro, Townsville-AW\",\r\n    \"email\": \"Josi2022@novo.com\",\r\n    \"senha\": \"Senhafraca123\",\r\n    \"contato\": \"70 970707070\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/user/638fde5892ecf9a5e1ca7d5b",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user",
+										"638fde5892ecf9a5e1ca7d5b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "176"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b0-oc82lnLTZskvTd+5ae6CTAsPYr4\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:33:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nome\": \"Josivan Pereira\",\n    \"endereco\": \"Rua Capricórnio de Almeida, Nº 123, Centro, Townsville-AW\",\n    \"email\": \"Josi2022@novo.com\",\n    \"senha\": \"Senhafraca123\",\n    \"contato\": \"70 970707070\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/user/638fde5892ecf9a5e1ca7d5b",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user",
+								"638fde5892ecf9a5e1ca7d5b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Exclusão do TEST",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/user/638fde5892ecf9a5e1ca7d5b",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user",
+										"638fde5892ecf9a5e1ca7d5b"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:37:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"Josi2022@novo.com\",\r\n    \"senha\":\"Senhafraca123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/user/login",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Logando usuario test",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"test\",\r\n    \"senha\":\"test\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/user/login",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a-L0/aWNs1zaasCqVDpGWwA6GSSsw\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:30:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"638fde5892ecf9a5e1ca7d5b\""
+						},
+						{
+							"name": "Login com erro de senha",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"Josi2022@novo.com\",\r\n    \"senha\":\"Senhafraca13\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/user/login",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c-3Rk1bge0s6VuJbi+S2m2iU0UGdY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:35:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {}\n}"
+						},
+						{
+							"name": "Login usuario TEST atualizado",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"Josi2022@novo.com\",\r\n    \"senha\":\"Senhafraca123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/user/login",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a-L0/aWNs1zaasCqVDpGWwA6GSSsw\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:35:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"638fde5892ecf9a5e1ca7d5b\""
+						},
+						{
+							"name": "Login de user inesistente",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"Josi2022@novo.com\",\r\n    \"senha\":\"Senhafraca123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/user/login",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c-3Rk1bge0s6VuJbi+S2m2iU0UGdY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:39:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Item rotas",
+			"item": [
+				{
+					"name": "Ver item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/item",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"item"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Ver itens por id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/item?owner_id=638f42bd461a86f831bcd70f",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"item"
+									],
+									"query": [
+										{
+											"key": "owner_id",
+											"value": "638f42bd461a86f831bcd70f"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "268"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10c-VW5EfdKYIYAdP5yjS6aIGxjt0WE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:47:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638fe26416bcf681b1be177d\",\n        \"nome\": \"test\",\n        \"descricao\": \"test\",\n        \"categoria\": \"test\",\n        \"owner_id\": \"638f42bd461a86f831bcd70f\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"img_url\": \"/img4.jpg\",\n        \"slug\": \"test\",\n        \"data_de_criacao\": \"2022-12-07T00:46:28.861Z\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Ver itens por categoria",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/item?categoria=roupas",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"item"
+									],
+									"query": [
+										{
+											"key": "categoria",
+											"value": "roupas"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1315"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"523-Wc9tulP30hHeWoaEXTduRNTHLKY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:52:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638e9dbba10a454a21e38400\",\n        \"nome\": \"camisa polo vermelha\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-vermelha\",\n        \"data_de_criacao\": \"2022-12-06T01:41:15.685Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dc8a10a454a21e38402\",\n        \"nome\": \"camisa polo azul\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-azul\",\n        \"data_de_criacao\": \"2022-12-06T01:41:28.966Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dcea10a454a21e38404\",\n        \"nome\": \"camisa polo pink\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-pink\",\n        \"data_de_criacao\": \"2022-12-06T01:41:34.960Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dd8a10a454a21e38406\",\n        \"nome\": \"camisa sem gola verde\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-sem-gola-verde\",\n        \"data_de_criacao\": \"2022-12-06T01:41:44.941Z\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Ver itens com limit",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/item?limit=5",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"item"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1582"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"62e-09Kgl/7J0lmaCMRpHGsVxHn+dVc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:53:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638e9dbba10a454a21e38400\",\n        \"nome\": \"camisa polo vermelha\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-vermelha\",\n        \"data_de_criacao\": \"2022-12-06T01:41:15.685Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dc8a10a454a21e38402\",\n        \"nome\": \"camisa polo azul\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-azul\",\n        \"data_de_criacao\": \"2022-12-06T01:41:28.966Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dcea10a454a21e38404\",\n        \"nome\": \"camisa polo pink\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-pink\",\n        \"data_de_criacao\": \"2022-12-06T01:41:34.960Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dd8a10a454a21e38406\",\n        \"nome\": \"camisa sem gola verde\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-sem-gola-verde\",\n        \"data_de_criacao\": \"2022-12-06T01:41:44.941Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638fe26416bcf681b1be177d\",\n        \"nome\": \"test\",\n        \"descricao\": \"test\",\n        \"categoria\": \"test\",\n        \"owner_id\": \"638f42bd461a86f831bcd70f\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"img_url\": \"/img4.jpg\",\n        \"slug\": \"test\",\n        \"data_de_criacao\": \"2022-12-07T00:46:28.861Z\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Ver itens com owner_id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/item?owner_id=638746e6eb4b2ea47751ac5a",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"item"
+									],
+									"query": [
+										{
+											"key": "owner_id",
+											"value": "638746e6eb4b2ea47751ac5a"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1315"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"523-Wc9tulP30hHeWoaEXTduRNTHLKY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:54:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638e9dbba10a454a21e38400\",\n        \"nome\": \"camisa polo vermelha\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-vermelha\",\n        \"data_de_criacao\": \"2022-12-06T01:41:15.685Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dc8a10a454a21e38402\",\n        \"nome\": \"camisa polo azul\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-azul\",\n        \"data_de_criacao\": \"2022-12-06T01:41:28.966Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dcea10a454a21e38404\",\n        \"nome\": \"camisa polo pink\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-pink\",\n        \"data_de_criacao\": \"2022-12-06T01:41:34.960Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dd8a10a454a21e38406\",\n        \"nome\": \"camisa sem gola verde\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-sem-gola-verde\",\n        \"data_de_criacao\": \"2022-12-06T01:41:44.941Z\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Ver itens com owner_id e limit",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/item?limit=4&owner_id=638746e6eb4b2ea47751ac5a",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"item"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "4"
+										},
+										{
+											"key": "owner_id",
+											"value": "638746e6eb4b2ea47751ac5a"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1315"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"523-Wc9tulP30hHeWoaEXTduRNTHLKY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:54:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638e9dbba10a454a21e38400\",\n        \"nome\": \"camisa polo vermelha\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-vermelha\",\n        \"data_de_criacao\": \"2022-12-06T01:41:15.685Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dc8a10a454a21e38402\",\n        \"nome\": \"camisa polo azul\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-azul\",\n        \"data_de_criacao\": \"2022-12-06T01:41:28.966Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dcea10a454a21e38404\",\n        \"nome\": \"camisa polo pink\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-polo-pink\",\n        \"data_de_criacao\": \"2022-12-06T01:41:34.960Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"638e9dd8a10a454a21e38406\",\n        \"nome\": \"camisa sem gola verde\",\n        \"descricao\": \"test\",\n        \"categoria\": \"roupas\",\n        \"owner_id\": \"638746e6eb4b2ea47751ac5a\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"test\",\n        \"formas_de_pagamento\": \"test\",\n        \"img_url\": \"/roupa4.png\",\n        \"slug\": \"camisa-sem-gola-verde\",\n        \"data_de_criacao\": \"2022-12-06T01:41:44.941Z\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Ver itens TEST atualizado",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/item?categoria=livros",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"item"
+									],
+									"query": [
+										{
+											"key": "categoria",
+											"value": "livros"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "298"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12a-QrKPXwhY1CG5nT1afPR6PawEcr4\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:57:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638fe26416bcf681b1be177d\",\n        \"nome\": \"Mindhunter\",\n        \"descricao\": \"Livro Mindhunter\",\n        \"categoria\": \"livros\",\n        \"owner_id\": \"638f42bd461a86f831bcd70f\",\n        \"quantidade\": 1,\n        \"formas_de_entrega\": \"correios\",\n        \"img_url\": \"/img4.jpg\",\n        \"slug\": \"mindhunter\",\n        \"data_de_criacao\": \"2022-12-07T00:46:28.861Z\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Ver itens test deletado",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/item?categoria=livros",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"item"
+									],
+									"query": [
+										{
+											"key": "categoria",
+											"value": "livros"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:59:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						}
+					]
+				},
+				{
+					"name": "Criar item",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"test\",\r\n    \"descricao\":\"test\",\r\n    \"categoria\":\"test\",\r\n    \"quantidade\":1,\r\n    \"formas_de_entrega\":\"test\",\r\n    \"img_url\":\"/img.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/item?owner_id=638f4692461a86f831bcd715",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"item"
+							],
+							"query": [
+								{
+									"key": "owner_id",
+									"value": "638f4692461a86f831bcd715"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criando item test",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\":\"test\",\r\n    \"descricao\":\"test\",\r\n    \"categoria\":\"test\",\r\n    \"quantidade\":1,\r\n    \"formas_de_entrega\":\"test\",\r\n    \"img_url\":\"/img4.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/item?owner_id=638f42bd461a86f831bcd70f",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"item"
+									],
+									"query": [
+										{
+											"key": "owner_id",
+											"value": "638f42bd461a86f831bcd70f"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "266"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10a-+kehgueXi5/MrpjMktv4QfoRGYU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:46:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nome\": \"test\",\n    \"descricao\": \"test\",\n    \"categoria\": \"test\",\n    \"owner_id\": \"638f42bd461a86f831bcd70f\",\n    \"quantidade\": 1,\n    \"formas_de_entrega\": \"test\",\n    \"img_url\": \"/img4.jpg\",\n    \"slug\": \"test\",\n    \"_id\": \"638fe26416bcf681b1be177d\",\n    \"data_de_criacao\": \"2022-12-07T00:46:28.861Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "atualizar item",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"Mindhunter\",\r\n    \"descricao\":\"Livro Mindhunter\",\r\n    \"categoria\":\"livros\",\r\n    \"quantidade\":1,\r\n    \"formas_de_entrega\":\"correios\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/item/638fe26416bcf681b1be177d",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"item",
+								"638fe26416bcf681b1be177d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar item TEST",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\":\"Mindhunter\",\r\n    \"descricao\":\"Livro Mindhunter\",\r\n    \"categoria\":\"livros\",\r\n    \"quantidade\":1,\r\n    \"formas_de_entrega\":\"correios\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/item/638fe26416bcf681b1be177d",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"item",
+										"638fe26416bcf681b1be177d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "139"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8b-1cLJm/j/aHEdGXmxW3TIgvrGHfM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:56:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nome\": \"Mindhunter\",\n    \"descricao\": \"Livro Mindhunter\",\n    \"categoria\": \"livros\",\n    \"quantidade\": 1,\n    \"formas_de_entrega\": \"correios\",\n    \"slug\": \"mindhunter\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/item/6387f45db9cdb9e0f6b07b2a",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"item",
+								"6387f45db9cdb9e0f6b07b2a"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deletar item TEST",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/item/638fe26416bcf681b1be177d",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"item",
+										"638fe26416bcf681b1be177d"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 00:59:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Trocas Rotas",
+			"item": [
+				{
+					"name": "Ver trocas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/trade",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"trade"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Busca por Id inexistente",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/trade?id_user=638fe91e56438cc2a1d119fb",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"trade"
+									],
+									"query": [
+										{
+											"key": "id_user",
+											"value": "638fe91e56438cc2a1d119fb"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 01:16:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						},
+						{
+							"name": "Busca por ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/trade?id_user=638f42bd461a86f831bcd70f",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"trade"
+									],
+									"query": [
+										{
+											"key": "id_user",
+											"value": "638f42bd461a86f831bcd70f"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "200"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c8-gn8ug3D3d59AuEhbPMSZfiDsGTk\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 01:16:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638fe93156438cc2a1d119fd\",\n        \"id_user_1\": \"638f42bd461a86f831bcd70f\",\n        \"id_item_1\": \"638fe8f056438cc2a1d119f9\",\n        \"id_user_2\": \"638f4692461a86f831bcd715\",\n        \"id_item_2\": \"638fe91e56438cc2a1d119fb\",\n        \"__v\": 0\n    }\n]"
+						},
+						{
+							"name": "Ver trocas",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/trade",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"trade"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 01:19:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						}
+					]
+				},
+				{
+					"name": "Criar trocas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_user_1",
+									"value": "638f42bd461a86f831bcd70f",
+									"type": "text"
+								},
+								{
+									"key": "id_user_2",
+									"value": "638f4692461a86f831bcd715",
+									"type": "text"
+								},
+								{
+									"key": "id_item_1",
+									"value": "638fe8f056438cc2a1d119f9",
+									"type": "text"
+								},
+								{
+									"key": "id_item_2",
+									"value": "638fe91e56438cc2a1d119fb",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/trade",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"trade"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criar trocas",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_user_1",
+											"value": "638f42bd461a86f831bcd70f",
+											"type": "text"
+										},
+										{
+											"key": "id_user_2",
+											"value": "638f4692461a86f831bcd715",
+											"type": "text"
+										},
+										{
+											"key": "id_item_1",
+											"value": "638fe8f056438cc2a1d119f9",
+											"type": "text"
+										},
+										{
+											"key": "id_item_2",
+											"value": "638fe91e56438cc2a1d119fb",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{API_URL}}/trade",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"trade"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "198"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c6-8mQ2Lob5m34+j6vNfnli6/VnRK0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 01:15:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id_user_1\": \"638f42bd461a86f831bcd70f\",\n    \"id_item_1\": \"638fe8f056438cc2a1d119f9\",\n    \"id_user_2\": \"638f4692461a86f831bcd715\",\n    \"id_item_2\": \"638fe91e56438cc2a1d119fb\",\n    \"_id\": \"638fe93156438cc2a1d119fd\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Atualizar trocas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_user_1",
+									"value": "638746e6eb4b2ea47751ac5a",
+									"type": "text"
+								},
+								{
+									"key": "id_item_1",
+									"value": "638e9dcea10a454a21e38404",
+									"type": "text"
+								},
+								{
+									"key": "id_user_2",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "id_item_2",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/trade/638fe93156438cc2a1d119fd",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"trade",
+								"638fe93156438cc2a1d119fd"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Atualizar trocas",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_user_1",
+											"value": "638746e6eb4b2ea47751ac5a",
+											"type": "text"
+										},
+										{
+											"key": "id_item_1",
+											"value": "638e9dcea10a454a21e38404",
+											"type": "text"
+										},
+										{
+											"key": "id_user_2",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "id_item_2",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{API_URL}}/trade/638fe93156438cc2a1d119fd",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"trade",
+										"638fe93156438cc2a1d119fd"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "109"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6d-G2ThccPSfMU+Ht04oC53TVidXVI\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 01:18:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id_user_1\": \"638746e6eb4b2ea47751ac5a\",\n    \"id_item_1\": \"638e9dcea10a454a21e38404\",\n    \"id_user_2\": \"\",\n    \"id_item_2\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar trocas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/trade/638fe93156438cc2a1d119fd",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"trade",
+								"638fe93156438cc2a1d119fd"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deletar trocas",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/trade/638fe93156438cc2a1d119fd",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"trade",
+										"638fe93156438cc2a1d119fd"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Dec 2022 01:18:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,28 @@
+Trabalho semestral da Cadeira de Desenvolvimento WEB
+
+Arthur Salvatore
+Deoclecio Rodrigues
+Carlos Gabriel 
+
+Aplicação: Retroque
+Meta ONU: Consumo e produção responsáveis
+Descrição: Um app para troca de produtos usados
+
+Testes do POSTman estão na pasta do Backend
+
+Em caso de erro de conecxão com servidor confira no banco de dados(MongoDB) se seu IP está registrado
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Para executar a aplicação use "npm run start"
+para executar a aplicação com nodemon use "npm run dev"
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+A documentação de uso do backend nos comentários da aplicação.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dependências da aplicação:
+-CORS
+-Express
+-Mongoose
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
