@@ -1,0 +1,19 @@
+#headerNav {
+  display: flex;
+}
+
+#headerNav a {
+  padding: 12px 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-color);
+}
+
+#headerNav a:last-of-type {
+  padding-right: 0px;
+}
+
+#headerNav a:hover {
+  color: var(--secondary-color);
+}

@@ -1,0 +1,21 @@
+#category-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--max-width);
+  gap: 24px;
+}
+
+#category-title {
+  text-transform: capitalize;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+#category-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, auto));
+  gap: 16px;
+}

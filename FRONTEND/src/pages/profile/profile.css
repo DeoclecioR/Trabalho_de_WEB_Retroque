@@ -1,0 +1,77 @@
+#profile-container {
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+#profile-container h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+#profile-info-container {
+  display: flex;
+  gap: 12px;
+}
+
+#profile-info-container span {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#profile-nav {
+  display: flex;
+}
+
+#profile-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 16px;
+}
+
+#profile-nav a:hover {
+  color: var(--secondary-color);
+}
+
+#profile-nav a.active {
+  color: var(--secondary-color);
+  box-shadow: inset 0px -2px 0px var(--secondary-color);
+}
+
+#profile-adverts-container {
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#profile-adverts-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+#profile-adverts-header h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+#profile-adverts-header p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#profile-adverts-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, auto));
+  gap: 16px;
+}

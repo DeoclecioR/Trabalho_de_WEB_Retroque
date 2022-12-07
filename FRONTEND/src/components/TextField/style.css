@@ -1,0 +1,109 @@
+/* ---- Comportamento padrão ---- */
+#textField {
+  width: 100%;
+  position: relative;
+  height: 52px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  border: var(--border-color);
+}
+
+#startIconSlot {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 12px;
+  color: var(--text-muted-color);
+}
+
+#endIconSlot {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 12px;
+  color: var(--text-muted-color);
+  background-color: var(--transparent-color);
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  background-color: var(--transparent-color);
+  outline: none;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: var(--text-color);
+  padding: 22px 15px 6px 15px;
+}
+
+label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  color: var(--text-color);
+  outline: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: all .2s ease-out;
+}
+
+label span {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  position: absolute;
+  bottom: 14px;
+  left: 15px;
+  transition: all .2s ease-out;
+}
+
+input:focus+label {
+  outline: 2px solid var(--text-muted-color);
+}
+
+input:focus+label span,
+input:valid+label span {
+  transform: translateY(-90%);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--text-muted-color);
+}
+
+#errorSlot {
+  color: var(--error-color);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ---- Comportamentos especiais ---- */
+#startIconSlot.hasError {
+  color: var(--error-color);
+}
+
+input.hasIcon {
+  padding: 22px 15px 6px 46px;
+}
+
+input.hasError {
+  color: var(--error-color),
+}
+
+input.isPassword {
+  padding-right: 52px;
+}
+
+label.hasError {
+  outline: 2px solid var(--error-color) !important;
+  color: var(--error-color) !important;
+}
+
+label.hasIcon span {
+  left: 46px;
+}

@@ -1,0 +1,39 @@
+footer {
+  background-color: #EE2B4B;
+}
+
+#footer-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+  justify-content: space-between;
+}
+
+.linhas {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+
+.colum {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 60px;
+  color: #ffffff;
+  line-height: 25px;
+
+}
+
+.name {
+  width: 50px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 40px;
+}
