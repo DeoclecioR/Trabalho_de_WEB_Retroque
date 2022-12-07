@@ -14,10 +14,13 @@ export default {
     const { categoria } = request.query;
     const { limit } = request.query;
     const {owner_id} = request.query;
+    const { slug } = request.query;
+
     try {
       const result = categoria
         ? await Item.find({ "categoria": categoria }).limit(limit)
         : owner_id ? await Item.find({ "owner_id": owner_id }).limit(limit) 
+        : slug ? await Item.find({ "slug": slug })
         : await Item.find().limit(limit);
 
 
